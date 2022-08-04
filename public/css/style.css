@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: black;
+    background-color: rgba(0,0,0,.2);
+}
+
+
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #974BDE;
+  }
+  
+::selection {
+    color: white;
+    background: #974BDE;
+  }
+
+.content{
+    padding-top: 50px;
+    margin: 0 auto 0 auto;
+    width: 80%;
+    height: 79.5vh;
+}
+
+.nav{
+    /* background-color: rgba(0,0,0,.2); */
+    background-color: blueviolet;
+    opacity: 0.8;
+    color: white;
+    height: 40px;
+    width: 100vw;
+    padding-top: 15px;
+}
+
+.header-title{
+    margin: 0 15px;
+    display: inline;
+}
+
+ul{
+    display: inline;
+    list-style: none;
+    position: absolute;
+    right: 30px;
+}
+ul li{
+    display: inline;
+    margin:0 5px;
+}
+ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+ul li a{
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+}
+footer{
+    background-color: rgba(0,0,0,.2);
+    display: block;
+    text-align: center;
+    width: 100vw;
+    position: relative;
+    bottom: 0px
+}
+
+footer p{
+    font-size: 90%;
+    margin: 5px;
+}
+
+#title{
+    padding: 5px;
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+#post{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    height: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.edit-btn{
+    font-size: 110%;
+    padding:15px;
+    border-radius: 15px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 13%;
+    right: 3%;
+    border: none;
+}
+.compose-btn{
+    font-size: 125%;
+    padding:15px 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 13%;
+    right: 3%;
+    border: none;
+}
+
+hr{
+    background-color: black;
+    margin-bottom: 50px;
+}
+
+.publish-btn{
+    /* text-align: left; */
+    /* padding-left: 15px; */
+    margin-top: 50px;
+    font-size: 105%;
+    height: 40px;
+    width: 10%;
+    /* padding:15px 15px; */
+    border-radius: 10px;
+    color: white;
+    background-color: blueviolet;
+    border: none;
+}
+
+.compose-btn a{
+    color: white;
+} 
+
+/* SCROLLBAR  */
+
+::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:  black;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

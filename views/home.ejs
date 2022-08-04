@@ -1,0 +1,25 @@
+<%- include("partials/header") -%>
+
+<div class="content">
+
+
+    <% postsArray.forEach(function(post){ %>
+       <h1><%=post.title %></h1>   
+        <h4>
+            <% var truncatedBody = post.body.substring(0,99); %><%=truncatedBody%><br>
+            <% var truncatedBody2 = post.body.substring(99,199); %> <% if(truncatedBody2 !== ""){ %> <%=truncatedBody2%><% } %>...
+        </h4>
+        
+        <a href="posts/<%=post.title %>"> Read More</a>
+        <br>
+        <br>
+    <% });%>   
+</div>
+
+<a href="/compose"><button class="compose-btn"><i class="fa-solid fa-pen-to-square"></i></button></a>
+
+
+
+<%- include("partials/footer") -%>
+
+   
